@@ -13,7 +13,7 @@ This video will cover same the content in the readme below, so it's recommended
 that you watch the video and then review the readme for additional clarity on
 any parts of the video that were unclear.
 
-<!-- Video To Come -->
+<iframe width="100%" height="720" src="https://www.youtube.com/embed/gZoxTXnLXLg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Creating Your First Rails Project
 
@@ -72,8 +72,7 @@ important to understand and become familiar with the file system. Below is a
 breakdown for each directory:
 
 - **app**: contains the Models, Views, and Controllers, along with the rest
-  of the core functionality of the application. This is the one directory where
-  you can make a change and not have to restart the Rails server. The majority of
+  of the core functionality of the application. The majority of
   your time will be spent working in this directory.
 
 - **bin**: some built-in Rails tasks that you most likely will never have to
