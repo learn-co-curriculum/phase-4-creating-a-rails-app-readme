@@ -277,7 +277,8 @@ class CheeseController < ApplicationController
 end
 ```
 
-By using the `render` method, we're telling Rails: "instead of rendering an HTML template, you should send back JSON data as the response".
+By using the `render` method, we're telling Rails: "instead of rendering an HTML
+template, you should send back JSON data as the response".
 
 Try visiting that [same URL](http://localhost:3000/cheese) one last time:
 
