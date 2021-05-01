@@ -177,7 +177,8 @@ In order to **shutdown** your server, you will need to hit `control + c`.
 At its most basic level, the primary responsibility of Rails is to take a **HTTP
 request** and generate a properly-formatted **response**. To demonstrate how
 Rails server handles the request-response cycle, let's take an "error-driven
-development" approach, and try making a request to our server that we know won't work yet.
+development" approach, and try making a request to our server that we know won't
+work yet.
 
 With your server running, try to visit
 [`http://localhost:3000/cheese`](http://localhost:3000/cheese) in the browser.
