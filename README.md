@@ -13,7 +13,7 @@ This video will cover same the content in the readme below, so it's recommended
 that you watch the video and then review the readme for additional clarity on
 any parts of the video that were unclear.
 
-<iframe width="100%" height="720" src="https://www.youtube.com/embed/gZoxTXnLXLg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gZoxTXnLXLg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Creating Your First Rails Project
 
