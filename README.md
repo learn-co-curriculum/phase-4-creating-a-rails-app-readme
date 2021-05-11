@@ -184,7 +184,7 @@ With your server running, try to visit
 [`http://localhost:3000/cheese`](http://localhost:3000/cheese) in the browser.
 You'll see an error message like this:
 
-![route missing error](https://raw.githubusercontent.com/learn-co-curriculum/phase-4-creating-a-rails-app-readme/master/routing-error-1.png)
+![route missing error](https://curriculum-content.s3.amazonaws.com/phase-4/creating-a-rails-app-readme/routing-error-1.png)
 
 To fix this error, we need to define a **route** in our Rails app. A **route**
 is some code that tells Rails: "When a user makes a request with this HTTP verb
@@ -206,7 +206,7 @@ run the `index` in the method in the `CheeseController`."
 Now, back in the browser, visit that [same URL](http://localhost:3000/cheese)
 again. A new error message! Progress!
 
-![controller missing error](https://raw.githubusercontent.com/learn-co-curriculum/phase-4-creating-a-rails-app-readme/master/routing-error-2.png)
+![controller missing error](https://curriculum-content.s3.amazonaws.com/phase-4/creating-a-rails-app-readme/routing-error-2.png)
 
 This error message tells us we're missing a **Controller** to handle this route.
 
@@ -227,7 +227,7 @@ Now, when we make a `GET` request to `/cheese`, the code in the
 `CheeseController#index` method will run. Try visiting that
 [same URL](http://localhost:3000/cheese) again...
 
-![template missing error](https://raw.githubusercontent.com/learn-co-curriculum/phase-4-creating-a-rails-app-readme/master/template-error.png)
+![template missing error](https://curriculum-content.s3.amazonaws.com/phase-4/creating-a-rails-app-readme/template-error.png)
 
 Take a minute and read through this error message.
 
@@ -244,7 +244,7 @@ our controller. To create that template, make a new `cheese` folder in
 
 Try visiting that [same URL](http://localhost:3000/cheese) once more...
 
-![cheese html page](https://raw.githubusercontent.com/learn-co-curriculum/phase-4-creating-a-rails-app-readme/master/cheese-page-html.png)
+![cheese html page](https://curriculum-content.s3.amazonaws.com/phase-4/creating-a-rails-app-readme/cheese-page-html.png)
 
 Success at last! We've now gone through the entire request-response cycle in Rails!
 
@@ -283,7 +283,7 @@ template, you should send back JSON data as the response".
 
 Try visiting that [same URL](http://localhost:3000/cheese) one last time:
 
-![cheese json page](https://raw.githubusercontent.com/learn-co-curriculum/phase-4-creating-a-rails-app-readme/master/cheese-page-json.png)
+![cheese json page](https://curriculum-content.s3.amazonaws.com/phase-4/creating-a-rails-app-readme/cheese-page-json.png)
 
 That `render` method is a powerful bit of code. Keep in mind that as a server,
 it's always our job to send back a response to every request. When we're
