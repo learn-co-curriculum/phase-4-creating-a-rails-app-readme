@@ -49,7 +49,7 @@ There are a number of common naming conventions for Rails app names. Typically
 you will want to use all lower case letters, separated by '-', as shown in our
 `cheese-shop` naming structure. In the same way that there are rules for naming
 methods, variables, classes, etc. in Ruby, there are naming rules for
-application names. Since the application name is used as the app constant and
+application names. Since the application name is used as the app constant
 throughout the application, the best approach is to keep your naming simple and
 to follow a standard naming practice.
 
@@ -86,19 +86,20 @@ breakdown for each directory:
 
 - **db**: within the db directory you will find the database schema file that
   lists the database tables, their columns, and each column's associated data
-  type. The db directory also contains the `seeds.rb` file, which lets you create
-  some data that can be utilized in the application. This is a great way to
-  quickly integrate data in the application without having to manually add records
-  through a web form element. The schema file can be found at `db/schema.rb`.
+  type. The schema file can be found at `db/schema.rb`. The db directory also
+  contains the `seeds.rb` file, which lets you create some data that can be
+  utilized in the application. This is a great way to quickly integrate data in
+  the application without having to manually add records through a web form
+  element.
 
 - **lib**: while many developers could build full applications without ever
-  entering the lib directory, you will discover that it can be incredibly helpful.
-  The lib/tasks directory is where custom rake tasks are created. You have already
-  used a built-in rake task when you ran the database creation and migration
-  tasks; however, creating custom rake tasks can be very helpful and sometimes
-  necessary. For example, a custom rake task that runs in the background, making
-  calls to an external API and syncing the returned data into the application’s
-  database.
+  entering the lib directory, you will discover that it can be incredibly
+  helpful. The lib/tasks directory is where custom rake tasks are created. You
+  have already used a built-in rake task when you ran the database creation and
+  migration tasks; however, creating custom rake tasks can be very helpful and
+  sometimes necessary. For example, you could create a custom rake task that
+  runs in the background, making calls to an external API and syncing the
+  returned data into the application’s database.
 
 - **log**: within the log directory you will discover the application logs.
   This can be helpful for debugging purposes, but for a production application
@@ -106,7 +107,7 @@ breakdown for each directory:
   services like querying and alerts.
 
 - **public**: this directory contains some of the custom error pages, such as
-  404 errors, along with the robots.txt file which will let developers control how
+  404 errors, along with the robots.txt file which allows you to control how
   search engines index the application on the web.
 
 - **test**: by default Rails will install the test suite in this directory.
@@ -128,10 +129,10 @@ breakdown for each directory:
   is important to realize that the Gems that are brought into an application are
   simply Ruby files that help extend the functionality of the app.
 
-- **Gemfile.lock** – this file should not be edited. It displays all of the
-  dependencies that each of the Gems contain along with their associated versions.
-  Messing around with the lock file can lead to application bugs due to missing or
-  altered Gem dependencies.
+- **Gemfile.lock** – this file should not be edited. It is created when you run
+  `bundle install` and it displays all of the dependencies that each of the Gems
+  contain along with their associated versions. Messing around with the lock
+  file can lead to application bugs due to missing or altered Gem dependencies.
 
 - **README.md** – the readme file is an important place to document the
   details of the application. If the application is an open-source project, this
@@ -175,7 +176,7 @@ In order to **shutdown** your server, you will need to hit `control + c`.
 ## Our First Request
 
 At its most basic level, the primary responsibility of Rails is to take a **HTTP
-request** and generate a properly-formatted **response**. To demonstrate how
+request** and generate a properly-formatted **response**. To demonstrate how the
 Rails server handles the request-response cycle, let's take an "error-driven
 development" approach, and try making a request to our server that we know won't
 work yet.
@@ -211,7 +212,7 @@ again. A new error message! Progress!
 This error message tells us we're missing a **Controller** to handle this route.
 
 Let's create a controller. In the `app/controllers` folder, add a new file called
-`cheese_controller` with the following code:
+`cheese_controller.rb` with the following code:
 
 ```rb
 # app/controllers/cheese_controller.rb
@@ -300,7 +301,7 @@ a response when our server receives a request. We've also covered the basics of
 Rails file structure, and a few important places where we'll be writing the
 majority of our code as Rails developers. This lesson covered a lot of ground at
 a high level, so don't worry if all the pieces aren't totally clear yet.
-Throughout the rest of the section, we'll dive deeper into each of these pieces
+Throughout the rest of the section, we'll dive deeper into each of the pieces
 that make up a Rails API.
 
 ## Resources
