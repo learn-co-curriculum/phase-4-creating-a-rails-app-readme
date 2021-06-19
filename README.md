@@ -21,7 +21,9 @@ any parts of the video that were unclear.
 > installed on your system.
 
 To get started with Rails, we'll need to first make sure the gem is installed on
-your computer. To install the latest version, run:
+your computer. This command will install Rails globally, so you only have to run 
+this once, and you'll be able to use Rails from the terminal. To install the 
+latest version of Rails, run:
 
 ```bash
 gem install rails
@@ -45,17 +47,18 @@ When you run this command, a lot of things will start happening:
 - It will then run `bundle install` to download all the required gems
 - It will also initialize `git` in the newly created directory
 
+> The `--skip-javascript` flag tells Rails that we won't be using JavaScript for
+> this project. Since our JavaScript code will be written in a separate project
+> from our Rails code, we don't need any JavaScript dependencies for this app.
+> Using this flag makes the installation significantly faster.
+
 There are a number of common naming conventions for Rails app names. Typically
-you will want to use all lower case letters, separated by '-', as shown in our
+you will want to use all lowercase letters, separated by '-', as shown in our
 `cheese-shop` naming structure. In the same way that there are rules for naming
 methods, variables, classes, etc. in Ruby, there are naming rules for
 application names. Since the application name is used as the app constant
 throughout the application, the best approach is to keep your naming simple and
 to follow a standard naming practice.
-
-> The --skip-javascript flag tells Rails that we won't be using JavaScript for
-> this project. Since our JavaScript code will be written in a separate project
-> from our Rails code, we don't need any JavaScript dependencies for this app.
 
 ## Rails File Structure Overview
 
@@ -239,7 +242,7 @@ our controller. To create that template, make a new `cheese` folder in
 `app/views` and add a `index.html.erb` file with this code:
 
 ```erb
-<!-- app/views/index.html.erb -->
+<!-- app/views/cheese/index.html.erb -->
 <h1>Hello Cheese World!</h1>
 ```
 
@@ -252,14 +255,16 @@ Success at last! We've now gone through the entire request-response cycle in Rai
 Let's take a moment and retrace our steps. From the browser, we made a `GET`
 request to `/cheese`. For Rails to handle this request:
 
-- We added a new route in the `config/routes.rb` file
-- In that route, we specified a **controller method**
-- We created a controller in `app/controllers/cheese_controller.rb` with an
-  `index` method
+- We added a new route (`get "/cheese"`) in the `config/routes.rb` file
+- In that route, we specified a **controller action** (`"cheese#index"`)
+- We created that controller in `app/controllers/cheese_controller.rb` with an
+  `index` action
 - By convention, Rails will look for a **view template** that matches the name
   of the controller and action
-- In that view template, we can write some HTML
-- Rails will send that HTML as a response to the browser
+- In that view template, we wrote some HTML
+
+Now when that `GET /cheese` request comes through, Rails is able to send the HTML 
+from our view template as a response to the browser.
 
 ### Sending JSON Data
 
