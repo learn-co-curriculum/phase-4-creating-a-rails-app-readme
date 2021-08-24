@@ -144,7 +144,7 @@ breakdown for each directory:
 
 ## Starting Up the Rails Server
 
-To startup the Rails server, make sure that you are in the root of the
+To start up the Rails server, make sure that you are in the root of the
 application in the terminal and run Rails:
 
 ```console
@@ -162,18 +162,17 @@ Puma starting in single mode...
 * Listening on http://[::1]:3000
 ```
 
-Now that the server is running properly, you can verify that it's working
-properly in the browser by navigating to
-[`http://localhost:3000`](http://localhost:3000).
+Now that the server is running, you can verify that it's working properly in the
+browser by navigating to [`http://localhost:3000`](http://localhost:3000).
 
 Here you will see the 'Yay! You're on Rails!' page that ships with Rails. It
 shows that we're ready to start building the application!
 
-In order to **shutdown** your server, you will need to hit `control + c`.
+In order to **shut down** your server, you will need to hit `control + c`.
 
 ## Our First Request
 
-At its most basic level, the primary responsibility of Rails is to take a **HTTP
+At its most basic level, the primary responsibility of Rails is to take an **HTTP
 request** and generate a properly-formatted **response**. To demonstrate how the
 Rails server handles the request-response cycle, let's take an "error-driven
 development" approach, and try making a request to our server that we know won't
@@ -200,7 +199,7 @@ end
 ```
 
 Here, we're telling Rails, "When a `GET` request to the `/cheese` path comes in,
-run the `index` in the method in the `CheeseController`."
+run the `index` method in the `CheeseController`."
 
 Now, back in the browser, visit that [same URL](http://localhost:3000/cheese)
 again. A new error message! Progress!
@@ -298,11 +297,11 @@ much about the `.erb` view files for the time being.
 
 At this point, we've learned how to use Rails to send back HTML or JSON data as
 a response when our server receives a request. We've also covered the basics of
-Rails file structure, and a few important places where we'll be writing the
-majority of our code as Rails developers. This lesson covered a lot of ground at
-a high level, so don't worry if all the pieces aren't totally clear yet.
-Throughout the rest of the section, we'll dive deeper into each of the pieces
-that make up a Rails API.
+the file structure of a Rails app, and a few important places where we'll be
+writing the majority of our code as Rails developers. This lesson covered a lot
+of ground at a high level, so don't worry if all the pieces aren't totally clear
+yet. Throughout the rest of the section, we'll dive deeper into each of the
+pieces that make up a Rails API.
 
 ## Resources
 
