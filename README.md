@@ -21,12 +21,12 @@ any parts of the video that were unclear.
 > installed on your system.
 
 To get started with Rails, we'll need to first make sure the gem is installed on
-your computer. This command will install Rails globally, so you only have to run 
-this once, and you'll be able to use Rails from the terminal. To install the 
+your computer. This command will install Rails globally, so you only have to run
+this once, and you'll be able to use Rails from the terminal. To install the
 latest version of Rails, run:
 
-```bash
-gem install rails
+```console
+$ gem install rails
 ```
 
 Once the gem is installed you can create Rails applications!
@@ -36,8 +36,8 @@ Once the gem is installed you can create Rails applications!
 Our application is going to be called CheeseShop. To create the application, run
 the following command:
 
-```bash
-rails new cheese-shop --skip-javascript
+```console
+$ rails new cheese-shop --skip-javascript
 ```
 
 When you run this command, a lot of things will start happening:
@@ -65,9 +65,9 @@ to follow a standard naming practice.
 Be sure to change into your new Rails app directory, and open the project in your
 text editor:
 
-```bash
-cd cheese-shop
-code .
+```console
+$ cd cheese-shop
+$ code .
 ```
 
 Since you will be working with this file structure on a daily basis, it is very
@@ -145,15 +145,10 @@ breakdown for each directory:
 ## Starting Up the Rails Server
 
 To startup the Rails server, make sure that you are in the root of the
-application in the terminal and run:
+application in the terminal and run Rails:
 
-```bash
-rails s
-```
-
-This will startup the rails server and you will see output such as the following:
-
-```txt
+```console
+$ rails s
 => Booting Puma
 => Rails 6.1.3.1 application starting in development
 => Run `bin/rails server --help` for more startup options
@@ -263,7 +258,7 @@ request to `/cheese`. For Rails to handle this request:
   of the controller and action
 - In that view template, we wrote some HTML
 
-Now when that `GET /cheese` request comes through, Rails is able to send the HTML 
+Now when that `GET /cheese` request comes through, Rails is able to send the HTML
 from our view template as a response to the browser.
 
 ### Sending JSON Data
