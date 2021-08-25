@@ -308,9 +308,9 @@ pieces that make up a Rails API.
 Before you move on, make sure you can answer the following questions:
 
 1. When an HTTP request is made to a Rails app, what is the sequence of events
-   that happens to return a response?
-2. What are the two methods we've learned about to provide a response to an HTTP
-   request? What type of content does each of them return?
+   that happens to return the response?
+2. What are the two methods you learned about in this lesson to provide a
+   response to an HTTP request? What type of content does each of them return?
 
 ## Resources
 
