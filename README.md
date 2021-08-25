@@ -303,6 +303,15 @@ of ground at a high level, so don't worry if all the pieces aren't totally clear
 yet. Throughout the rest of the section, we'll dive deeper into each of the
 pieces that make up a Rails API.
 
+## Check For Understanding
+
+Before you move on, make sure you can answer the following questions:
+
+1. When an HTTP request is made to a Rails app, what is the sequence of events
+   that happens to return a response?
+2. What are the two methods we've learned about to provide a response to an HTTP
+   request? What type of content does each of them return?
+
 ## Resources
 
 - [The Rails Command Line](https://guides.rubyonrails.org/command_line.html)
