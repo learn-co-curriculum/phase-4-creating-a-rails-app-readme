@@ -81,11 +81,13 @@ breakdown for each directory:
 - **bin**: some built-in Rails tasks that you most likely will never have to
   work with.
 
-- **config**: the config directory manages a number of settings that control
-  the default behavior, including: the environment settings, a set of modules that
-  are initialized when the application starts, the ability to set language values,
-  the application settings, the database settings, the application routes, and
-  lastly the secret key base.
+- **config**: the config directory manages a number of settings that control the
+  default behavior, including: the environment settings, a set of modules that
+  are initialized when the application starts, the ability to set language
+  values, the application settings, the database settings, the application
+  routes, and lastly the secret key base. You will primarily use the config
+  directory when you are setting up your application's routes in the
+  `config/routes.rb` file (more on this shortly).
 
 - **db**: within the db directory you will find the database schema file that
   lists the database tables, their columns, and each column's associated data
@@ -93,7 +95,9 @@ breakdown for each directory:
   contains the `seeds.rb` file, which lets you create some data that can be
   utilized in the application. This is a great way to quickly integrate data in
   the application without having to manually add records through a web form
-  element.
+  element. You will primarily use the db directory when you set up the migration
+  files that will create your database tables; you may also use it to create
+  seed data.
 
 - **lib**: while many developers could build full applications without ever
   entering the lib directory, you will discover that it can be incredibly
@@ -302,6 +306,17 @@ writing the majority of our code as Rails developers. This lesson covered a lot
 of ground at a high level, so don't worry if all the pieces aren't totally clear
 yet. Throughout the rest of the section, we'll dive deeper into each of the
 pieces that make up a Rails API.
+
+## Check For Understanding
+
+Before you move on, make sure you can answer the following questions:
+
+1. What three folders in the Rails file structure will you use most as you're
+   developing your Rails app, and for what?
+2. When an HTTP request is made to a Rails app, what is the sequence of events
+   that happens to return the response?
+3. What are the two methods you learned about in this lesson to provide a
+   response to an HTTP request? What type of content does each of them return?
 
 ## Resources
 
